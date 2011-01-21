@@ -35,9 +35,14 @@ public class MarketInfoActivity extends Activity {
         setContentView(R.layout.main);
         
         mTelephonyManager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
+        String deviceId = Settings.System.getString(getContentResolver(),
+                Settings.Secure.ANDROID_ID);
+
         
         TextView tv = (TextView)findViewById(R.id.device_id);
         StringBuilder sb = new StringBuilder()
+                .append(("androidId:")
+                .append(deviceId)
                 .append("\ndeviceAndSdkVersion:")
                 .append(getDeviceAndSdkVersion())
                 .append("\nuserLanguage:")
