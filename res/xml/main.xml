@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+  <Preference
+      android:title="@string/sd_storage"
+      android:key="sd_storage"
+      style="?android:preferenceInformationStyle" />
+  <Preference
+      android:title="@string/a2sd_storage"
+      android:key="app2sd_storage"
+      style="?android:preferenceInformationStyle" />
+  <Preference
+      android:title="@string/internal_storage"
+      android:key="internal_storage"
+      style="?android:preferenceInformationStyle" />
+  <Preference
+      android:title="@string/system_storage"
+      android:key="system_storage"
+      style="?android:preferenceInformationStyle" />
+  <Preference
+      android:title="@string/cache_storage"
+      android:key="cache_storage"
+      style="?android:preferenceInformationStyle" />
+  <Preference
+      android:title="@string/memory"
+      android:key="memory" />
+  <Preference
+      android:title="@string/processor"
+      android:key="processor" />
+  <Preference
+      android:title="@string/net_address"
+      android:key="net_address" />
+  <Preference
+      android:title="@string/battery_level"
+      android:key="battery_level"
+      android:summary="@string/retrieving" />
+    <PreferenceCategory android:title="@string/actions">
+        <Preference android:title="@string/refresh" android:key="refresh_status" />
+        <Preference android:title="@string/more_info" android:key="more_info" />
+    </PreferenceCategory>
+</PreferenceScreen>
+
