@@ -51,12 +51,12 @@ public class MarketInfoActivity extends Activity {
 
         setContentView(R.layout.main);
 
-        mTelephonyManager = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
+        mTelephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         String deviceId = Settings.System.getString(getContentResolver(),
                 Settings.Secure.ANDROID_ID);
 
 
-        TextView tv = (TextView)findViewById(R.id.device_id);
+        TextView tv = findViewById(R.id.device_id);
         StringBuilder sb = new StringBuilder()
                 .append("androidId:")
                 .append(deviceId)
@@ -88,7 +88,7 @@ public class MarketInfoActivity extends Activity {
             }
         }
 
-        tv = (TextView)findViewById(R.id.android_id);
+        tv = findViewById(R.id.android_id);
         tv.setText("SystemAvailableFeatures:\n" + feactures.toString());
     }
 
